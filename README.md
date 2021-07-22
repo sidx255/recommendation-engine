@@ -1,4 +1,4 @@
-# Team HackOVerflow - Recommendation Engine
+# Team HackOverflow - Recommendation Engine
 
 Recommendation Engine, developed @ Bajaj FInserv's HackRX '21 by Team HackOverflow
 
