@@ -1,8 +1,8 @@
 import yake
 import csv
 from nltk.corpus import wordnet
-import numpy as np
 
+"""Extract keywords from SEARCH QUERY"""
 kw_extractor = yake.KeywordExtractor()
 text = """holiday packages"""
 language = "en"
@@ -12,6 +12,7 @@ numOfKeywords = 5
 custom_kw_extractor = yake.KeywordExtractor(lan=language, n=max_ngram_size, dedupLim=deduplication_threshold, top=numOfKeywords, features=None)
 keywords = custom_kw_extractor.extract_keywords(text)
 
+"""Find synonyms of  keywords from SEARCH QUERY"""
 synonyms = []
 for fw in keywords:
     print(fw)
@@ -21,17 +22,12 @@ for i in range(len(keywords)):
         for l in syn.lemmas():
             synonyms.append(l.name())
 
-print(synonyms)
-
 final = list(dict.fromkeys(synonyms))
 
-for i in final:
-    if '_' in i:
-        final.remove(i)
-
-
+"""Find if the extracted synonyms are in URL.csv"""
 with open('URL.csv', encoding="utf8", newline='') as f:
     reader = csv.reader(f)
+    reader = [row[0].split("-")[0] for row in reader]
     data = list(reader)
 
 def common(a,b): 
@@ -39,3 +35,4 @@ def common(a,b):
     return c
 
 d=common(data,final)
+print(d)
