@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const table = document.getElementById("recTable");
     var recoms = result.recommendations;
     for(var i=0;i<recoms.length;i++){
-      if(i%3==0){
+      if(i%2==0){
         var row = table.insertRow(-1);  
       }
       var cell = row.insertCell(-1);
