@@ -22,7 +22,7 @@ Simple Python Implementation of recommendation engine
 
 ### Execution
 ```
-python test.py
+python final.py
 ```
 
 ## Help
