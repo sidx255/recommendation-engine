@@ -1,0 +1,66 @@
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+#navbar{
+  background-color: black !important;
+  padding: 0 0 0 2vw;
+}
+#searchValue{
+  box-shadow: none!important;
+}
+#search_button{
+  background-color: black;
+  color: white;
+  box-shadow: none!important;
+}
+#statsTable{
+  float: right;
+}
+#recomTable{
+  float: left;
+}
+#recTable td{
+  width: 20%;
+  text-align: center;
+}
+.stats td,th{
+  width: 50%;
+  text-align: center!important;
+  font-size: 3vh;
+}
+.imgSpace{
+  text-align: center;
+}
+.animImg{
+  width: 50vh;
+  margin-top: 2vh;
+}
+.searchForm{
+  margin-top: 4vh;
+}
+.resultDisplay{
+  text-align: left;
+  margin-left: 2vw;
+}
+.footerDiv{
+   clear: both;
+   position: relative;
+   top: 2vh;
+   text-align: center;
+}
